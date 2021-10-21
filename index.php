@@ -14,7 +14,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $date = getDatetimeNow();
 
 $db=new Database();
-$location = $db->row("location","qr", array("qr_id"=>$qr));
+$location = $db->row("location", "qr", array("qr_id" => $qr));
 
 $logged = $db->query("select ip from log where ip='".$ip."' and qr_id='".$qr."'");
 
@@ -27,7 +27,7 @@ if ($logged) {
 $link = $location["location"];
 
 if ($result) {
-	header("Refresh:0; url=$link");
+	header("Refresh:0; url=".$link);
 	exit();
 }
 
