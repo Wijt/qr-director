@@ -8,7 +8,7 @@ class Database
      */
     public function connect()
     {
-        include "config.php";
+        include 'config.php';
         $db = null;
         if ($db === null) {
             try {

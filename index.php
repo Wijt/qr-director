@@ -1,7 +1,7 @@
 <?php 
 
 require 'database.php';
-include "config.php";
+include 'config.php';
 
 if (!isset($_GET["qr"])) {
 	header("Refresh:0; url=".$mainpage);
