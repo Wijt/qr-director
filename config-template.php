@@ -8,6 +8,6 @@
     
     /* INDEX CONFIGS */
     $mainpage = "https://example.com";
-
+    $urlPass = "";
 
 ?>
